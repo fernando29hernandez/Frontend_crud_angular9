@@ -1,0 +1,35 @@
+
+ table {
+  width: 100%;
+}
+.example-card {
+  max-width: 300px;
+  display: table;
+  margin: 0 auto;
+  border: 1px solid black;
+  background: beige; 
+}
+.pestana {
+  background-color: cornflowerblue; 
+
+}
+
+.container {
+  padding: 15px;
+}
+
+
+.button {
+  width: 100%;
+}
+
+.mat-tab-labels, .mat-tab-label, .mat-tab-link {
+  color: white;
+  font-size: 16px;
+  background-color: #804A71;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+  background: white;
+  height: 5px; 
+}

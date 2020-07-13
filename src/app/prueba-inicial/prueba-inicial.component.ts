@@ -6,7 +6,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./prueba-inicial.component.scss']
 })
 export class PruebaInicialComponent implements OnInit {
-  title = 'Sales Report';
+  title = 'Reporte Prueba';
   created: Date = new Date();
   subtitle = '';
   constructor(private datePipe: DatePipe) { }
@@ -16,5 +16,4 @@ export class PruebaInicialComponent implements OnInit {
   ngOnInit(): void {
     this.salesDate();
   }
-
 }

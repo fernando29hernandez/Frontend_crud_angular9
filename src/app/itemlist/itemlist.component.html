@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="header">{{title}}</h1>
+  <h3 class="sub-header">{{simpleDate}}</h3>
+  <button (click)="updateDate()">Refresh Date</button>
+  <div class="content">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Item Name</th>
+          <th>Item Description</th>
+          <th>Item Price</th>
+          <th>Discount</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items" (click)="selectData(item)" (mouseover)="hoverRow($event)">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.desc}}</td>
+          <td>{{item.price | currency: 'USD'}}</td>
+          <td>{{discount}}%</td>
+          <td>{{item.price - ((item.price * discount) / 100) | currency: 'USD'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p>{{selected}}</p>
